@@ -1,0 +1,7 @@
+extends layout
+
+block content
+    div(class="loader" id= "loader")
+    a(id="mapsUrl") Open in Google Maps
+    div#map
+    script(src=`https://maps.googleapis.com/maps/api/js?key=${process.env.MAPS_KEY}&callback=getLocation`)

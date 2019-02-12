@@ -1,0 +1,34 @@
+doctype html
+html
+  head
+    title Open Parking
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
+    <meta property="og:title" content="Open Parks in Melbourne" />
+    <meta property="og:type" content="website" />
+    <meta name="og:site_name" content="Open Parking"/>
+    <meta property="og:url" content="http://open-parking.com/" />
+    <meta property="og:image" content="dist/images/shareImage.png" />
+    <meta property="og:description" content="Find the nearest avaliable park to you in Melbourne's city centre." />
+    <meta property="description" content="Find the nearest avaliable park to you in Melbourne's city centre." />
+    <meta name="robots" content="index, follow" />
+    <meta name="url" content="https://open-parking.com/">
+    <link rel="canonical" href="https://open-parking.com/" />
+
+    link(rel='stylesheet', href='/dist/style.css')
+    script(src='/dist/mapHandler.js')
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    script(async src="https://www.googletagmanager.com/gtag/js?id=UA-133242434-3")
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-133242434-3');
+  body
+    .content
+      block content
+      .footer
+        a(href="mailto:sam.fitz.burke@gmail.com") Created by Sam Burke
+        p
+        a(href="https://github.com/Burkie11/Open-Parking") Source code avaliable on Github
+
